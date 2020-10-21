@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    height: 200vh;
+    
+}
+
+.title{
+    text-align: center;
+    font-weight: 700;
+    font-size: larger;
+    margin-bottom: 20px;
+}
+.cart-section{
+    padding: 20px 60px;
+    background-color: #bbb;
+}
+.navig{
+    padding: 25px;
+    list-style: none;
+    background-color: #ccc;
+    align-items: center;
+    text-align: center;
+    height: 10vh;
+}
+.navig a{
+    width: 15%;
+    color: rgb(22, 22, 22);
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+a{
+    float: right;
+}
+#logo{
+    float: left;
+}
+li{
+    list-style: none;
+}
+.container{
+    padding: 20px;
+    background-color: #dddddd ;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.products-container{
+    background-color: rgb(235, 235, 235);
+    width: 250px;
+    height: 200px;
+    box-shadow: thistle 2px 2px 5px;
+    margin: 10px;
+
+}   
+.products-picture{
+    width: 100%;
+    height: 100px;
+    background-color: violet;
+}
+.products-title{
+
+}
+.buy{
+    background-color: greenyellow;
+    color: #333;
+    border: 1px solid green;
+    width: 2em  ;
+    width: 60px;
+    padding: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.descriptions{
+    padding: 10px;
+}
+.cart{
+    display: flex;
+    text-align: start;
+    align-items: center;
+    
+}
+.cart-item{
+    width: 40%;
+    margin-left: 10%;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.cart-quantity{
+    width: 25%;
+    padding: 5px;
+    height:25px;
+}
+.cart-quantity-size{
+    width: 25%;
+    padding: 5px;
+}
+.cart-price{
+    width: 20%;
+
+}
+.cart-remove-button{
+    margin: 0% 10% 0 10%;
+    padding: 5px;
+    color: blanchedalmond;
+    background-color: red;
+    border: none;
+    font-weight: 800;
+    box-shadow: rgb(221, 4, 4) 2px 2px 5px;
+    cursor: pointer;
+}
+.cart-column{
+    margin: 1em 0;
+}
+.cart-strong{
+    font-weight: 800;
+    font-size: 1.1em;
+}
+.cart-total-price{
+    margin: 20px;
+    text-align: center;
+}
+.cart-total-price strong{
+
+    font-size: 1.4em;
+}
+.total-price{
+    font-weight: 800;
+    font-size: 1.5em;
+    color: green;
+}

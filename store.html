@@ -1,35 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="./public/style.css">
+    <script async onload="" src="index.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <nav>
         <ul class="navig">
-            <a href="#cart"><li>Cart</li></a>
-            <a href="store.html"><li>Store</li></a>
-            <a href="home.html"><li>Home</li></a>
-            <a href="" id="logo"><li>The Shop</li></a>
-
+            <a href="#cart">Cart</a>
+            <a href="store.html">Store</a>
+            <a href="home.html">Home</a>
+            <a href="" id="logo">The Shop</a>
         </ul>
     </nav>
     <div class="container">
-        <div class="productsContainer">
-            <div class="productsPicture"></div>
+        <div class="products-container">
+            <img src="./public/pictures/sekai.jpg" class="products-picture"></img>
             <div class="descriptions">
-                <h4>INVISIBLE ITEM</h4>
-                <span class="price">$20</span>
+                <h4 class="products-title">INVISIBLE ITEM</h4>
+                <span class="price"> $20</span>
             </div>
-            <button>Buy</button>
+            <button class="buy">Buy1</button>
         </div>
-        
-        
+        <div class="products-container">
+            <img src="./public/pictures/sekai.jpg" class="products-picture"></img>
+            <div class="descriptions">
+                <h4 class="products-title">INVISIBLE ITEM</h4>
+                <span class="price"> $50</span>
+            </div>
+            <button class="buy">Buy1</button>
+        </div>
+        <div class="products-container">
+            <img src="./public/pictures/sekai.jpg" class="products-picture"></img>
+            <div class="descriptions">
+                <h4 class="products-title">INVISIBLE ITEM</h4>
+                <span class="price"> $40</span>
+            </div>
+            <button class="buy">Buy1</button>
+        </div>
+        <div class="products-container">
+            <img src="./public/pictures/sekai.jpg" class="products-picture"></img>
+            <div class="descriptions">
+                <h4 class="products-title">INVISIBLE ITEM</h4>
+                <span class="price"> $30</span>
+            </div>
+            <button class="buy">Buy1</button>
+        </div>
     </div>
-    <div id="cart">asdasd</div>
 
+    <!---------------------------CART SECTION---------------------------->
+    <div class="cart-section" id="cart">
+        <div class="title">Cart</div>
+        <div class="cart">
+            <span class="cart-column cart-item cart-strong">Item</span>
+            <span class="cart-column cart-quantity cart-strong">Quantity</span>
+            <span class="cart-column cart-price cart-strong">Price</span>
+
+        </div>
+        <div class="cart">
+            <span class="cart-column cart-item">
+                <img src="./public/pictures/sekai.jpg" width="100px">
+                <div>
+                    INVISIBLE
+                </div>
+            </span>
+            <span class="cart-column cart-quantity-size">
+                <input class="cart-quantity" type="number" name="" id="">
+            </span>
+            <span class="cart-column cart-price">$100</span>
+            <button class="cart-column cart-remove-button">REMOVE</button>
+        </div>
+        <div class="cart">
+            <span class="cart-column cart-item">
+                <img src="./public/pictures/sekai.jpg" width="100px">
+                <div>
+                    INVISIBLE
+                </div>
+            </span>
+            <span class="cart-column cart-quantity-size">
+                <input class="cart-quantity" type="number" name="" id="">
+            </span>
+            <span class="cart-column cart-price">$100</span>
+            <button class="cart-column cart-remove-button">REMOVE</button>
+        </div>
+        <div class="cart">
+            <span class="cart-column cart-item">
+                <img src="./public/pictures/sekai.jpg" width="100px">
+                <div>
+                    INVISIBLE
+                </div>
+            </span>
+            <span class="cart-column cart-quantity-size">
+                <input class="cart-quantity" type="number" name="" id="">
+            </span>
+            <span class="cart-column cart-price">$100</span>
+            <button class="cart-column cart-remove-button">REMOVE</button>
+        </div>
+
+
+        <div class="cart-total-price">
+            <strong>total:</strong>
+            <span class="total-price">$0</span>
+        </div>
+    </div>
 </body>
+
 </html>

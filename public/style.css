@@ -77,6 +77,9 @@ li{
     margin-left: 10px;
     cursor: pointer;
 }
+.buy:hover{
+    background-color: rgb(120, 201, 0);
+}
 .descriptions{
     padding: 10px;
 }
@@ -94,17 +97,16 @@ li{
 }
 
 .cart-quantity{
-    width: 25%;
+    width: 25%      ;
     padding: 5px;
     height:25px;
 }
 .cart-quantity-size{
     width: 25%;
-    padding: 5px;
+    padding: 10px;
 }
 .cart-price{
     width: 20%;
-
 }
 .cart-remove-button{
     margin: 0% 10% 0 10%;
@@ -115,6 +117,9 @@ li{
     font-weight: 800;
     box-shadow: rgb(221, 4, 4) 2px 2px 5px;
     cursor: pointer;
+}
+.cart-remove-button:hover{
+    background-color: rgb(201, 0, 0);
 }
 .cart-column{
     margin: 1em 0;

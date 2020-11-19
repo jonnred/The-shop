@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/style.css">
-
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+    <link
+rel="stylesheet"
+href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+type="text/css"
+/>
+    
     <title>Document</title>
 </head>
 <body>
@@ -19,5 +27,27 @@
     <div class="container">
         sadsad
     </div>
+
+
+
+
+    <div id='map' style='width: 400px; height: 300px;'></div>
+<script defer>
+  mapboxgl.accessToken = 'pk.eyJ1Ijoiam9ubnJlZDExMjMiLCJhIjoiY2tobTExOWNtMHYyajJ5cGVuMXIxeHlnMyJ9.QFsJvR2PHPZssuLk4aIr2g';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [-79.4512, 43.6568],
+    zoom:13
+  });
+  map.addControl(new mapboxgl.NavigationControl());
+  map.addControl(
+new MapboxDirections({
+accessToken: mapboxgl.accessToken
+}),
+'top-left'
+);
+</script>
+
 </body>
 </html>
